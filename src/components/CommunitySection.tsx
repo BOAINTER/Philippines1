@@ -8,10 +8,36 @@ interface CommunitySectionProps {
 }
 
 const extraMessages = [
-  { username: 'Marco_Manila', message: 'USD/JPY Call hits payout perfectly on PocketOption! Salamat BOA! 🇵🇭💰', profit: '+$92.00 (₱5,152)', avatarSeed: 'marco' },
-  { username: 'Angela_Cebu', message: 'Just joined the VIP tier! Direct signals and GCash payouts clear fast.', avatarSeed: 'angela' },
-  { username: 'Rich_Trader_PH', message: 'BOA is literally the highest accuracy signal channel I have used.', profit: '+$410.00 (₱22,960)', avatarSeed: 'rich' },
-  { username: 'Jun_Davao', message: 'Napakagandang indicator suite! Super clear risk management guidance. 🙏', avatarSeed: 'jun' }
+  {
+    username: 'Althea_Laguna',
+    message: 'USD/JPY Call hits payout perfectly on PocketOption! Panalo na naman tayo mga ka-trader! Salamat BOA! 🇵🇭💰',
+    profit: '+$142.00 (₱7,952)',
+    avatarSeed: 'althea'
+  },
+  {
+    username: 'Jayson_Iloilo',
+    message: 'Kaka-upgrade ko lang sa VIP tier! Sobrang bilis ng signals at instant pumasok ang payout sa Maya ko.',
+    profit: '+$210.00 (₱11,760)',
+    avatarSeed: 'jayson'
+  },
+  {
+    username: 'Lito_Bacolod',
+    message: 'BOA is literally the highest accuracy signal channel na nasubukan ko. Walang mintis ang entries!',
+    profit: '+$410.00 (₱22,960)',
+    avatarSeed: 'lito'
+  },
+  {
+    username: 'Nenita_Taguig',
+    message: 'Napakagandang indicator suite! Super clear ng risk management guidance ni Master Bo. 🙏🇵🇭',
+    profit: '+$88.00 (₱4,928)',
+    avatarSeed: 'nenita'
+  },
+  {
+    username: 'Dante_Pangasinan',
+    message: '3 wins streak na agad ngayong gabi sa GBP/JPY! Maraming salamat sa VIP team!',
+    profit: '+$175.00 (₱9,800)',
+    avatarSeed: 'dante'
+  }
 ];
 
 export default function CommunitySection({ initialMessages }: CommunitySectionProps) {
@@ -49,8 +75,8 @@ export default function CommunitySection({ initialMessages }: CommunitySectionPr
     const now = new Date();
     const userMsg: ChatMessage = {
       id: `user_${Date.now()}`,
-      username: 'You_Trader_PH',
-      avatarSeed: 'you',
+      username: 'Juan_Trader_PH',
+      avatarSeed: 'juan',
       message: inputMessage,
       time: now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     };
@@ -74,12 +100,12 @@ export default function CommunitySection({ initialMessages }: CommunitySectionPr
               <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-[#0A3D91]">
                 Supportive Community
               </h3>
-              <p className="text-[10px] text-gray-500">VIP Telegram Live Chat (PH)</p>
+              <p className="text-[10px] text-gray-500">VIP Telegram Live Chat (Tagalog / PH)</p>
             </div>
           </div>
           <span className="text-[10px] bg-[#0A3D91] border border-[#0A3D91] px-2 py-0.5 rounded-full text-white font-mono font-bold flex items-center gap-1 shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A] animate-pulse" />
-            <span>{activeAlerts} Traders</span>
+            <span>{activeAlerts} Traders Online</span>
           </span>
         </div>
 
@@ -127,7 +153,7 @@ export default function CommunitySection({ initialMessages }: CommunitySectionPr
           type="text"
           value={inputMessage}
           onChange={(e) => setInputMessage(e.target.value)}
-          placeholder="Type message and share wins..."
+          placeholder="Mag-type ng mensahe o i-share ang panalo mo..."
           className="flex-1 bg-slate-100 border border-gray-300 rounded-lg px-3 py-1.5 text-xs text-[#1F2937] placeholder-gray-400 focus:outline-none focus:border-[#0A3D91]"
         />
         <button

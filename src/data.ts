@@ -221,14 +221,56 @@ export const pricingPlans: PricingPlan[] = [
   }
 ];
 
-// Supportive Community Chats (Telegram messages tailored for Philippine market)
+// Supportive Community Chats (Telegram messages in Tagalog/Taglish tailored for Philippine market)
 export const initialChatMessages: ChatMessage[] = [
-  { id: 'c1', username: 'Marco_Manila', avatarSeed: 'marco', message: 'Just caught the EUR/USD OTC Call signal! Solid 92% payout on PocketOption! Salamat BOA team! 🇵🇭🔥', time: '19:34', profit: '+$184.00 (₱10,304)' },
-  { id: 'c2', username: 'Angelo_Cebu', avatarSeed: 'angelo', message: 'Ang ganda ng Apple OTC signal ngayon! 4 wins in a row, grabe ang accuracy! 👍', time: '19:35', profit: '+$312.50 (₱17,500)' },
-  { id: 'c3', username: 'Maria_Davao', avatarSeed: 'maria', message: 'GCash payout processed in under 5 mins! BOA VIP channel is legit and fast! 🇵🇭', time: '19:36', profit: '+$240.00 (₱13,440)' },
-  { id: 'c4', username: 'Linda_Makati', avatarSeed: 'linda', message: 'The Gold Spot entry was so crisp! BOA risk management guides saved my account today.', time: '19:37', profit: '+$520.00 (₱29,120)' },
-  { id: 'c5', username: 'Jun_Baguio', avatarSeed: 'jun', message: 'Premium automated bot running smoothly 24/7 on my IQ Option account.', time: '19:38', profit: '+$84.00 (₱4,704)' },
-  { id: 'c6', username: 'Reynold_QC', avatarSeed: 'reynold', message: 'Napakagandang indicator suite! Direct Telegram alerts complete with entry points.', time: '19:39' }
+  {
+    id: 'c1',
+    username: 'Bayani_Bulacan',
+    avatarSeed: 'bayani',
+    message: 'Grabe ang galing ng signal kanina! Pasok agad ang EUR/USD OTC Call, panalo na naman! Maraming salamat Master Bo! 🇵🇭🔥',
+    time: '19:34',
+    profit: '+$184.00 (₱10,304)'
+  },
+  {
+    id: 'c2',
+    username: 'Tala_Pampanga',
+    avatarSeed: 'tala',
+    message: 'Ang ganda ng Apple OTC signal ngayon! 4 wins in a row, grabe ang accuracy! Salamat sa BOA team! 👍',
+    time: '19:35',
+    profit: '+$312.50 (₱17,500)'
+  },
+  {
+    id: 'c3',
+    username: 'Mateo_Cavite',
+    avatarSeed: 'mateo',
+    message: 'Napakabilis pumasok ng GCash payout ko, wala pang 5 minutes! BOA VIP channel is legit and napakalaking tulong! 🇵🇭',
+    time: '19:36',
+    profit: '+$240.00 (₱13,440)'
+  },
+  {
+    id: 'c4',
+    username: 'Danica_Batangas',
+    avatarSeed: 'danica',
+    message: 'Sobrang linaw ng Gold Spot entry! Ang ganda ng risk management guide, protektado talaga ang puhunan ko.',
+    time: '19:37',
+    profit: '+$520.00 (₱29,120)'
+  },
+  {
+    id: 'c5',
+    username: 'Kuya_Rodel_QC',
+    avatarSeed: 'rodel',
+    message: 'Kumita ako ng ₱8,400 ngayong gabi lang gamit ang automated bot! Solid 24/7 scanning.',
+    time: '19:38',
+    profit: '+$150.00 (₱8,400)'
+  },
+  {
+    id: 'c6',
+    username: 'Maricar_Pasig',
+    avatarSeed: 'maricar',
+    message: 'Kahit baguhan lang ako sa trading, sobrang dali sundan ng direct Telegram alerts ni Master Bo! Maraming salamat po! 🙏',
+    time: '19:39',
+    profit: '+$95.00 (₱5,320)'
+  }
 ];
 
 // FAQs list

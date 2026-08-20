@@ -129,7 +129,7 @@ export default function PricingSection({ plans, onSelectPlan }: PricingSectionPr
 
               {/* Call to Action Button */}
               <a
-                href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+                href="https://t.me/+EQM592BjHx42MmM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3 bg-[#F5B400] text-[#1F2937] hover:bg-[#e0a400] rounded-full font-display font-black text-xs tracking-wider uppercase shadow-md transition active:scale-[0.98] cursor-pointer mt-4 text-center block"

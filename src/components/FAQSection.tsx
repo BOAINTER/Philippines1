@@ -80,7 +80,7 @@ export default function FAQSection({ faqs, onOpenSignUp }: FAQSectionProps) {
       {/* Large Call to Action */}
       <div className="mt-2 pt-3 border-t border-gray-200">
         <motion.a
-          href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+          href="https://t.me/+EQM592BjHx42MmM1"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}

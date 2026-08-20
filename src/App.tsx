@@ -10,6 +10,7 @@ import FAQSection from './components/FAQSection';
 import FeaturesGrid from './components/FeaturesGrid';
 import ActionModal from './components/ActionModal';
 import LiveWinnersTicker from './components/LiveWinnersTicker';
+import MasterBoFloat from './components/MasterBoFloat';
 
 import {
   initialAssets,
@@ -249,6 +250,9 @@ export default function App() {
           </p>
         </div>
       </footer>
+
+      {/* Floating Master Bo Widget (Fixed Bottom-Right) */}
+      <MasterBoFloat />
 
       {/* Signup & Registration Modal popup */}
       <ActionModal

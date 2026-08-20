@@ -90,7 +90,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
           {/* CTA Button */}
           <div className="hidden sm:flex flex-col items-end">
             <a
-              href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+              href="https://t.me/+EQM592BjHx42MmM1"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] font-display font-black text-xs tracking-wider rounded-lg shadow-md transition cursor-pointer flex items-center gap-1.5 uppercase"
@@ -99,7 +99,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <ArrowUpRight className="w-3.5 h-3.5 text-[#1F2937]" />
             </a>
             <span className="text-[9px] text-blue-200 font-bold mt-0.5 uppercase tracking-wider">
-              IQ OPTION OFFICIAL LINK
+              TELEGRAM OFFICIAL LINK
             </span>
           </div>
 
@@ -146,7 +146,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
 
             <div className="pt-2 border-t border-white/20">
               <a
-                href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+                href="https://t.me/+EQM592BjHx42MmM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

@@ -50,7 +50,7 @@ export default function HeroSection({
 
         <div className="mt-5 flex items-center gap-3">
           <a
-            href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+            href="https://t.me/+EQM592BjHx42MmM1"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#F5B400] text-[#1F2937] font-display font-black text-xs uppercase tracking-wider hover:bg-[#e0a400] transition active:scale-95 shadow-md inline-flex items-center gap-2"
@@ -137,7 +137,7 @@ export default function HeroSection({
 
               {/* Action Button */}
               <a
-                href="https://affiliate.iqoption.net/redir/?aff=261925&aff_model=revenue&afftrack=BOAinter1"
+                href="https://t.me/+EQM592BjHx42MmM1"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
