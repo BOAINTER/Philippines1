@@ -165,57 +165,16 @@ export const featuresList: FeatureItem[] = [
 export const pricingPlans: PricingPlan[] = [
   {
     id: 'plan_free',
-    name: 'PRO',
+    name: 'BOA VIP FREE ACCESS',
     price: 0,
-    period: 'one-time payment',
+    period: 'Free for the first 100 traders/month',
     features: [
-      'Live signal checklist',
-      'OTC + OTC signals',
-      'Automated trading bots',
-      'Expert education',
-      'Priority Telegram'
-    ],
-    color: 'border-gold-500'
-  },
-  {
-    id: 'plan_pro1',
-    name: 'PRO',
-    price: 29,
-    period: 'one-time payment',
-    features: [
-      'Live signal checklist',
-      'OTC + OTC signals',
-      'Automated trading bots',
-      'Expert education',
-      'Priority Telegram'
-    ],
-    color: 'border-gold-500'
-  },
-  {
-    id: 'plan_pro2',
-    name: 'PRO',
-    price: 29,
-    period: 'one-time payment',
-    features: [
-      'Live signal checklist',
-      'OTC + OTC signals',
-      'Automated trading bots',
-      'Expert education',
-      'Priority Telegram'
-    ],
-    color: 'border-gold-500'
-  },
-  {
-    id: 'plan_pro3',
-    name: 'PRO',
-    price: 29,
-    period: 'one-time payment',
-    features: [
-      'Live signal checklist',
-      'OTC + OTC signals',
-      'Automated trading bots',
-      'Expert education',
-      'Priority Telegram'
+      '100% Free Lifetime Access (No Hidden Fees)',
+      'Real-time High-Accuracy OTC & Forex Signals',
+      'Instant Telegram Direct Push Alerts',
+      'Automated Trading Bot Integration Support',
+      'Complete Academy Training & Risk Management Course',
+      '24/7 VIP Community Access & Master Bo Guidance'
     ],
     color: 'border-gold-500'
   }
