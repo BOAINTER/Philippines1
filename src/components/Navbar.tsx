@@ -78,13 +78,13 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               </button>
             ))}
             <a
-              href="https://t.me/+EQM592BjHx42MmM1"
+              href="https://t.me/boacademy_bot"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 text-sm font-bold text-[#F5B400] hover:text-amber-300 transition"
             >
               <Send className="w-4 h-4" />
-              <span>Telegram</span>
+              <span>Telegram Channel</span>
             </a>
             <a
               href="https://t.me/boacademy_bot"
@@ -145,7 +145,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               </button>
             ))}
             <a
-              href="https://t.me/+EQM592BjHx42MmM1"
+              href="https://t.me/boacademy_bot"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 py-2 text-base font-bold text-[#F5B400] hover:text-amber-300 transition"
