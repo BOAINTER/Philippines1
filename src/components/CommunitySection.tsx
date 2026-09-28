@@ -10,7 +10,7 @@ interface CommunitySectionProps {
 const extraMessages = [
   {
     username: 'Althea_Laguna',
-    message: 'USD/JPY Call hits payout perfectly on PocketOption! Panalo na naman tayo mga ka-trader! Salamat BOA! 🇵🇭💰',
+    message: 'USD/JPY Call hits payout perfectly on PocketOption! Panalo na naman tayo mga ka-trader! Salamat BOA! 🌐💰',
     profit: '+$142.00 (₱7,952)',
     avatarSeed: 'althea'
   },
@@ -28,7 +28,7 @@ const extraMessages = [
   },
   {
     username: 'Nenita_Taguig',
-    message: 'Napakagandang indicator suite! Super clear ng risk management guidance ni Master Bo. 🙏🇵🇭',
+    message: 'Napakagandang indicator suite! Super clear ng risk management guidance ni Master Bo. 🙏🌐',
     profit: '+$88.00 (₱4,928)',
     avatarSeed: 'nenita'
   },

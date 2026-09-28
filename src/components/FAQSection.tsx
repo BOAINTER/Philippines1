@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FAQItem } from '../types';
-import { ChevronDown, ChevronUp, MessageSquare, PhoneCall, Sparkles } from 'lucide-react';
+import { ChevronDown, ChevronUp, MessageSquare, PhoneCall, Sparkles, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface FAQSectionProps {
@@ -25,8 +25,9 @@ export default function FAQSection({ faqs, onOpenSignUp }: FAQSectionProps) {
           <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-[#0A3D91]">
             FAQ & Call to Action
           </h3>
-          <span className="text-[10px] text-[#F5B400] bg-[#0A3D91] px-2 py-0.5 rounded font-mono font-bold">
-            ACADEMY FAQ 🇵🇭
+          <span className="text-[10px] text-[#F5B400] bg-[#0A3D91] px-2 py-0.5 rounded font-mono font-bold inline-flex items-center gap-1">
+            <span>ACADEMY FAQ</span>
+            <Globe className="w-3 h-3 text-[#F5B400]" />
           </span>
         </div>
 
@@ -80,7 +81,7 @@ export default function FAQSection({ faqs, onOpenSignUp }: FAQSectionProps) {
       {/* Large Call to Action */}
       <div className="mt-2 pt-3 border-t border-gray-200">
         <motion.a
-          href="https://t.me/+EQM592BjHx42MmM1"
+          href="https://t.me/boacademy_bot"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}

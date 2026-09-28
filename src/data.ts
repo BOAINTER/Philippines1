@@ -186,7 +186,7 @@ export const initialChatMessages: ChatMessage[] = [
     id: 'c1',
     username: 'Bayani_Bulacan',
     avatarSeed: 'bayani',
-    message: 'Grabe ang galing ng signal kanina! Pasok agad ang EUR/USD OTC Call, panalo na naman! Maraming salamat Master Bo! 🇵🇭🔥',
+    message: 'Grabe ang galing ng signal kanina! Pasok agad ang EUR/USD OTC Call, panalo na naman! Maraming salamat Master Bo! 🌐🔥',
     time: '19:34',
     profit: '+$184.00 (₱10,304)'
   },
@@ -202,7 +202,7 @@ export const initialChatMessages: ChatMessage[] = [
     id: 'c3',
     username: 'Mateo_Cavite',
     avatarSeed: 'mateo',
-    message: 'Napakabilis pumasok ng GCash payout ko, wala pang 5 minutes! BOA VIP channel is legit and napakalaking tulong! 🇵🇭',
+    message: 'Napakabilis pumasok ng GCash payout ko, wala pang 5 minutes! BOA VIP channel is legit and napakalaking tulong! 🌐',
     time: '19:36',
     profit: '+$240.00 (₱13,440)'
   },

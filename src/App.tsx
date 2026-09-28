@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Globe } from 'lucide-react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import LiveChartComponent, { GoldCornerOrnate } from './components/LiveChartComponent';
@@ -227,7 +228,10 @@ export default function App() {
         <div className="max-w-7xl lg:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
-              <span className="font-display font-black text-xs px-2 py-0.5 rounded border border-[#F5B400] text-[#1F2937] bg-[#F5B400]">BOA 🇵🇭</span>
+              <span className="font-display font-black text-xs px-2 py-0.5 rounded border border-[#F5B400] text-[#1F2937] bg-[#F5B400] inline-flex items-center gap-1">
+                <span>BOA</span>
+                <Globe className="w-3.5 h-3.5 text-[#1F2937]" />
+              </span>
               <span className="text-white font-semibold">&copy; 2026 BOA International Academy. All rights reserved.</span>
             </div>
             <div className="flex gap-4 text-blue-200 font-sans">
@@ -236,7 +240,7 @@ export default function App() {
               <span className="hover:text-[#F5B400] cursor-pointer transition">Privacy Policy</span>
               <span>&bull;</span>
               <a
-                href="https://t.me/+EQM592BjHx42MmM1"
+                href="https://t.me/boacademy_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#F5B400] text-[#F5B400] font-bold cursor-pointer transition"

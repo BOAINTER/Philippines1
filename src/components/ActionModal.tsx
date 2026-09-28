@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Send, CheckCircle, Sparkles, Shield, Trophy } from 'lucide-react';
+import { X, Send, CheckCircle, Sparkles, Shield, Trophy, Globe } from 'lucide-react';
 
 interface ActionModalProps {
   isOpen: boolean;
@@ -75,8 +75,9 @@ export default function ActionModal({ isOpen, onClose, selectedPlanName }: Actio
                     <h3 className="text-xl font-display font-black text-[#0A3D91]">
                       {selectedPlanName ? `Unlock ${selectedPlanName}` : 'Get Started for Free'}
                     </h3>
-                    <p className="text-xs text-[#F5B400] font-bold bg-[#0A3D91] px-2 py-0.5 rounded inline-block mt-0.5">
-                      BOA International Academy 🇵🇭
+                    <p className="text-xs text-[#F5B400] font-bold bg-[#0A3D91] px-2 py-0.5 rounded inline-flex items-center gap-1 mt-0.5">
+                      <span>BOA International Academy</span>
+                      <Globe className="w-3 h-3 text-[#F5B400]" />
                     </p>
                   </div>
                 </div>
@@ -171,13 +172,13 @@ export default function ActionModal({ isOpen, onClose, selectedPlanName }: Actio
 
                 <div className="flex flex-col gap-3">
                   <a
-                    href="https://t.me/+EQM592BjHx42MmM1"
+                    href="https://t.me/boacademy_bot"
                     target="_blank"
                     rel="noreferrer"
                     className="py-3 px-4 bg-[#0A3D91] hover:bg-[#083175] text-white font-bold rounded-lg transition active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer shadow-md"
                   >
                     <Send className="w-4 h-4 text-[#F5B400]" />
-                    <span>Open VIP Telegram Channel</span>
+                    <span>Open VIP Telegram Bot</span>
                   </a>
 
                   <button

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Asset } from '../types';
-import { TrendingUp, TrendingDown, Bell } from 'lucide-react';
+import { TrendingUp, TrendingDown, Bell, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface HeroSectionProps {
@@ -39,8 +39,9 @@ export default function HeroSection({
           <h2 className="text-base font-display font-bold text-[#0A3D91]">
             BOA International Academy
           </h2>
-          <span className="px-2 py-0.5 rounded bg-[#F5B400] text-[10px] font-mono text-[#1F2937] font-bold">
-            GLOBAL 🇵🇭
+          <span className="px-2 py-0.5 rounded bg-[#F5B400] text-[10px] font-mono text-[#1F2937] font-bold inline-flex items-center gap-1 shadow-sm">
+            <span>GLOBAL</span>
+            <Globe className="w-3 h-3 text-[#1F2937]" />
           </span>
         </div>
 
@@ -50,7 +51,7 @@ export default function HeroSection({
 
         <div className="mt-5 flex items-center gap-3">
           <a
-            href="https://t.me/+EQM592BjHx42MmM1"
+            href="https://t.me/boacademy_bot"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#F5B400] text-[#1F2937] font-display font-black text-xs uppercase tracking-wider hover:bg-[#e0a400] transition active:scale-95 shadow-md inline-flex items-center gap-2"
@@ -58,7 +59,7 @@ export default function HeroSection({
             <span>Get Started For Free</span>
           </a>
           <a
-            href="https://t.me/+EQM592BjHx42MmM1"
+            href="https://t.me/boacademy_bot"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-3 rounded-full bg-[#0A3D91] text-white font-display font-bold text-xs uppercase tracking-wider hover:bg-[#062866] transition active:scale-95 shadow-md inline-flex items-center gap-2"
@@ -137,7 +138,7 @@ export default function HeroSection({
 
               {/* Action Button */}
               <a
-                href="https://t.me/+EQM592BjHx42MmM1"
+                href="https://t.me/boacademy_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}

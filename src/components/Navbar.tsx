@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Send, Menu, X, ArrowUpRight, TrendingUp } from 'lucide-react';
+import { Send, Menu, X, ArrowUpRight, TrendingUp, Globe } from 'lucide-react';
 
 interface NavbarProps {
   onOpenModal: () => void;
@@ -53,8 +53,9 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <span className="text-sm font-display font-black tracking-widest text-white group-hover:text-[#F5B400] transition-colors duration-300 block leading-tight">
                 BOA INTERNATIONAL ACADEMY
               </span>
-              <span className="text-[9px] text-[#F5B400] block leading-none font-mono tracking-widest mt-0.5">
-                GLOBAL TRADING COMMUNITY 🇵🇭
+              <span className="text-[9px] text-[#F5B400] flex items-center gap-1 leading-none font-mono tracking-widest mt-0.5">
+                <span>GLOBAL TRADING COMMUNITY</span>
+                <Globe className="w-3 h-3 text-[#F5B400]" />
               </span>
             </div>
           </div>
@@ -85,12 +86,21 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <Send className="w-4 h-4" />
               <span>Telegram</span>
             </a>
+            <a
+              href="https://t.me/boacademy_bot"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 text-sm font-bold text-white hover:text-[#F5B400] transition"
+            >
+              <Send className="w-4 h-4 text-[#F5B400]" />
+              <span>Support</span>
+            </a>
           </div>
 
           {/* CTA Button */}
           <div className="hidden sm:flex flex-col items-end">
             <a
-              href="https://t.me/+EQM592BjHx42MmM1"
+              href="https://t.me/boacademy_bot"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] font-display font-black text-xs tracking-wider rounded-lg shadow-md transition cursor-pointer flex items-center gap-1.5 uppercase"
@@ -143,10 +153,19 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <Send className="w-5 h-5" />
               <span>Telegram Channel</span>
             </a>
+            <a
+              href="https://t.me/boacademy_bot"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 py-2 text-base font-bold text-white hover:text-[#F5B400] transition"
+            >
+              <Send className="w-5 h-5 text-[#F5B400]" />
+              <span>Support (@boacademy_bot)</span>
+            </a>
 
             <div className="pt-2 border-t border-white/20">
               <a
-                href="https://t.me/+EQM592BjHx42MmM1"
+                href="https://t.me/boacademy_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

@@ -1,5 +1,6 @@
 import { FeatureItem } from '../types';
 import * as LucideIcons from 'lucide-react';
+import { Globe } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface FeaturesGridProps {
@@ -21,8 +22,9 @@ export default function FeaturesGrid({ features }: FeaturesGridProps) {
             Precision Ecosystem
           </h3>
         </div>
-        <span className="text-[10px] text-[#F5B400] bg-[#0A3D91] px-2.5 py-1 rounded font-mono font-bold">
-          BOA INTERNATIONAL 🇵🇭
+        <span className="text-[10px] text-[#F5B400] bg-[#0A3D91] px-2.5 py-1 rounded font-mono font-bold inline-flex items-center gap-1">
+          <span>BOA INTERNATIONAL</span>
+          <Globe className="w-3 h-3 text-[#F5B400]" />
         </span>
       </div>
 
