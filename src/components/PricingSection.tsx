@@ -9,7 +9,7 @@ interface PricingSectionProps {
 }
 
 export default function PricingSection({ plans }: PricingSectionProps) {
-  const telegramUrl = 'https://t.me/boacademy_bot';
+  const telegramUrl = 'https://t.me/BOAInternational';
   const plan = plans[0] || {
     id: 'plan_free',
     name: 'BOA VIP FREE ACCESS',

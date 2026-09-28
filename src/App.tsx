@@ -240,7 +240,7 @@ export default function App() {
               <span className="hover:text-[#F5B400] cursor-pointer transition">Privacy Policy</span>
               <span>&bull;</span>
               <a
-                href="https://t.me/boacademy_bot"
+                href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#F5B400] text-[#F5B400] font-bold cursor-pointer transition"

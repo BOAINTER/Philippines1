@@ -172,7 +172,7 @@ export default function ActionModal({ isOpen, onClose, selectedPlanName }: Actio
 
                 <div className="flex flex-col gap-3">
                   <a
-                    href="https://t.me/boacademy_bot"
+                    href="https://t.me/BOAInternational"
                     target="_blank"
                     rel="noreferrer"
                     className="py-3 px-4 bg-[#0A3D91] hover:bg-[#083175] text-white font-bold rounded-lg transition active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer shadow-md"

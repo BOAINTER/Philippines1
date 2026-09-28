@@ -78,7 +78,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               </button>
             ))}
             <a
-              href="https://t.me/boacademy_bot"
+              href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 text-sm font-bold text-[#F5B400] hover:text-amber-300 transition"
@@ -87,7 +87,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <span>Telegram Channel</span>
             </a>
             <a
-              href="https://t.me/boacademy_bot"
+              href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 text-sm font-bold text-white hover:text-[#F5B400] transition"
@@ -100,7 +100,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
           {/* CTA Button */}
           <div className="hidden sm:flex flex-col items-end">
             <a
-              href="https://t.me/boacademy_bot"
+              href="https://t.me/BOAInternational"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] font-display font-black text-xs tracking-wider rounded-lg shadow-md transition cursor-pointer flex items-center gap-1.5 uppercase"
@@ -145,7 +145,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               </button>
             ))}
             <a
-              href="https://t.me/boacademy_bot"
+              href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 py-2 text-base font-bold text-[#F5B400] hover:text-amber-300 transition"
@@ -154,18 +154,18 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <span>Telegram Channel</span>
             </a>
             <a
-              href="https://t.me/boacademy_bot"
+              href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 py-2 text-base font-bold text-white hover:text-[#F5B400] transition"
             >
               <Send className="w-5 h-5 text-[#F5B400]" />
-              <span>Support (@boacademy_bot)</span>
+              <span>Support (@BOAInternational)</span>
             </a>
 
             <div className="pt-2 border-t border-white/20">
               <a
-                href="https://t.me/boacademy_bot"
+                href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

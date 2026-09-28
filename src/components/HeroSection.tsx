@@ -51,7 +51,7 @@ export default function HeroSection({
 
         <div className="mt-5 flex items-center gap-3">
           <a
-            href="https://t.me/boacademy_bot"
+            href="https://t.me/BOAInternational"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#F5B400] text-[#1F2937] font-display font-black text-xs uppercase tracking-wider hover:bg-[#e0a400] transition active:scale-95 shadow-md inline-flex items-center gap-2"
@@ -59,7 +59,7 @@ export default function HeroSection({
             <span>Get Started For Free</span>
           </a>
           <a
-            href="https://t.me/boacademy_bot"
+            href="https://t.me/BOAInternational"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-3 rounded-full bg-[#0A3D91] text-white font-display font-bold text-xs uppercase tracking-wider hover:bg-[#062866] transition active:scale-95 shadow-md inline-flex items-center gap-2"
@@ -138,7 +138,7 @@ export default function HeroSection({
 
               {/* Action Button */}
               <a
-                href="https://t.me/boacademy_bot"
+                href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}

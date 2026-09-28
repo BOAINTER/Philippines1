@@ -81,7 +81,7 @@ export default function FAQSection({ faqs, onOpenSignUp }: FAQSectionProps) {
       {/* Large Call to Action */}
       <div className="mt-2 pt-3 border-t border-gray-200">
         <motion.a
-          href="https://t.me/boacademy_bot"
+          href="https://t.me/BOAInternational"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}

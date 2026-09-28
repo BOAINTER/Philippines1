@@ -3,7 +3,7 @@ import { MessageCircle, Sparkles } from 'lucide-react';
 import masterBoImg from '../assets/images/master_bo_avatar_1787193443308.jpg';
 
 export default function MasterBoFloat() {
-  const telegramUrl = 'https://t.me/+EQM592BjHx42MmM1';
+  const telegramUrl = 'https://t.me/BOAInternational';
 
   return (
     <aside
