@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { PricingPlan } from '../types';
 import { Check, Sparkles, Clock, AlertTriangle, ArrowRight, Flame } from 'lucide-react';
 import { motion } from 'motion/react';
+import { trackTelegramClick } from '../utils/pixel';
 
 interface PricingSectionProps {
   plans: PricingPlan[];
@@ -149,6 +150,7 @@ export default function PricingSection({ plans }: PricingSectionProps) {
               href={telegramUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackTelegramClick('Pricing Claim Free Access')}
               className="w-full py-3.5 sm:py-4 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] rounded-full font-display font-black text-xs sm:text-sm tracking-wider uppercase shadow-lg transition active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2 group"
             >
               <span>Claim Free Access on Telegram Now</span>

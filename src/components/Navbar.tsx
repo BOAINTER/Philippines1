@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Send, Menu, X, ArrowUpRight, TrendingUp, Globe } from 'lucide-react';
+import { trackTelegramClick } from '../utils/pixel';
 
 interface NavbarProps {
   onOpenModal: () => void;
@@ -81,6 +82,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
+              onClick={() => trackTelegramClick('Navbar Telegram Channel')}
               className="flex items-center gap-1.5 text-sm font-bold text-[#F5B400] hover:text-amber-300 transition"
             >
               <Send className="w-4 h-4" />
@@ -90,6 +92,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
+              onClick={() => trackTelegramClick('Navbar Support')}
               className="flex items-center gap-1.5 text-sm font-bold text-white hover:text-[#F5B400] transition"
             >
               <Send className="w-4 h-4 text-[#F5B400]" />
@@ -103,6 +106,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               href="https://t.me/BOAInternational"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackTelegramClick('Navbar Get Started CTA')}
               className="px-5 py-2 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] font-display font-black text-xs tracking-wider rounded-lg shadow-md transition cursor-pointer flex items-center gap-1.5 uppercase"
             >
               <span>GET STARTED FOR FREE</span>
@@ -148,6 +152,10 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
+              onClick={() => {
+                trackTelegramClick('Mobile Drawer Telegram Channel');
+                setMobileMenuOpen(false);
+              }}
               className="flex items-center gap-2 py-2 text-base font-bold text-[#F5B400] hover:text-amber-300 transition"
             >
               <Send className="w-5 h-5" />
@@ -157,6 +165,10 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               href="https://t.me/BOAInternational"
               target="_blank"
               rel="noreferrer"
+              onClick={() => {
+                trackTelegramClick('Mobile Drawer Support');
+                setMobileMenuOpen(false);
+              }}
               className="flex items-center gap-2 py-2 text-base font-bold text-white hover:text-[#F5B400] transition"
             >
               <Send className="w-5 h-5 text-[#F5B400]" />
@@ -168,7 +180,10 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
                 href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  trackTelegramClick('Mobile Drawer Get Started CTA');
+                  setMobileMenuOpen(false);
+                }}
                 className="w-full py-3 bg-[#F5B400] text-[#1F2937] font-black text-center rounded-lg shadow-lg transition text-sm tracking-wider font-display block uppercase"
               >
                 GET STARTED FOR FREE

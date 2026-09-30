@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FAQItem } from '../types';
 import { ChevronDown, ChevronUp, MessageSquare, PhoneCall, Sparkles, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { trackTelegramClick } from '../utils/pixel';
 
 interface FAQSectionProps {
   faqs: FAQItem[];
@@ -84,6 +85,7 @@ export default function FAQSection({ faqs, onOpenSignUp }: FAQSectionProps) {
           href="https://t.me/BOAInternational"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackTelegramClick('FAQ Join BOA CTA')}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="w-full py-3.5 bg-[#F5B400] hover:bg-[#e0a400] text-[#1F2937] font-display font-black text-xs tracking-widest rounded-full transition shadow-md flex items-center justify-center gap-2 cursor-pointer uppercase text-center block"

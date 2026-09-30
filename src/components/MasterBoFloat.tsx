@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { MessageCircle, Sparkles } from 'lucide-react';
 import masterBoImg from '../assets/images/master_bo_avatar_1787193443308.jpg';
+import { trackTelegramClick } from '../utils/pixel';
 
 export default function MasterBoFloat() {
   const telegramUrl = 'https://t.me/BOAInternational';
@@ -15,6 +16,7 @@ export default function MasterBoFloat() {
         href={telegramUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackTelegramClick('Floating Master Bo Widget')}
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 0.5 }}

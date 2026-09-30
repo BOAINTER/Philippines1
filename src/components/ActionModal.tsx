@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Send, CheckCircle, Sparkles, Shield, Trophy, Globe } from 'lucide-react';
+import { trackPixelEvent, trackTelegramClick } from '../utils/pixel';
 
 interface ActionModalProps {
   isOpen: boolean;
@@ -22,6 +23,14 @@ export default function ActionModal({ isOpen, onClose, selectedPlanName }: Actio
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
+      // Track conversion in Meta Pixel
+      trackPixelEvent('CompleteRegistration', {
+        content_name: selectedPlanName || 'BOA VIP Free Access',
+        status: true,
+      });
+      trackPixelEvent('Lead', {
+        content_name: selectedPlanName || 'BOA VIP Free Access',
+      });
     }, 1500);
   };
 
@@ -175,6 +184,7 @@ export default function ActionModal({ isOpen, onClose, selectedPlanName }: Actio
                     href="https://t.me/BOAInternational"
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => trackTelegramClick('Modal Open VIP Telegram Bot')}
                     className="py-3 px-4 bg-[#0A3D91] hover:bg-[#083175] text-white font-bold rounded-lg transition active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer shadow-md"
                   >
                     <Send className="w-4 h-4 text-[#F5B400]" />

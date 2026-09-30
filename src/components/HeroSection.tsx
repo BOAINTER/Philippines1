@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Asset } from '../types';
 import { TrendingUp, TrendingDown, Bell, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
+import { trackTelegramClick } from '../utils/pixel';
 
 interface HeroSectionProps {
   assets: Asset[];
@@ -54,6 +55,7 @@ export default function HeroSection({
             href="https://t.me/BOAInternational"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackTelegramClick('Hero Get Started Free')}
             className="px-6 py-3 rounded-full bg-[#F5B400] text-[#1F2937] font-display font-black text-xs uppercase tracking-wider hover:bg-[#e0a400] transition active:scale-95 shadow-md inline-flex items-center gap-2"
           >
             <span>Get Started For Free</span>
@@ -62,6 +64,7 @@ export default function HeroSection({
             href="https://t.me/BOAInternational"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackTelegramClick('Hero Telegram Support')}
             className="px-5 py-3 rounded-full bg-[#0A3D91] text-white font-display font-bold text-xs uppercase tracking-wider hover:bg-[#062866] transition active:scale-95 shadow-md inline-flex items-center gap-2"
           >
             <span>Telegram Support</span>
@@ -141,7 +144,10 @@ export default function HeroSection({
                 href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  trackTelegramClick(`Hero Asset Card Sign Up (${asset.symbol})`);
+                }}
                 className={`w-full py-1.5 rounded-lg text-xs font-bold font-display transition text-center block ${
                   isSelected
                     ? 'bg-[#F5B400] text-[#1F2937] hover:bg-[#e0a400]'

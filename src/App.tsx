@@ -12,6 +12,7 @@ import FeaturesGrid from './components/FeaturesGrid';
 import ActionModal from './components/ActionModal';
 import LiveWinnersTicker from './components/LiveWinnersTicker';
 import MasterBoFloat from './components/MasterBoFloat';
+import { trackTelegramClick } from './utils/pixel';
 
 import {
   initialAssets,
@@ -243,6 +244,7 @@ export default function App() {
                 href="https://t.me/BOAInternational"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackTelegramClick('Footer Telegram Support')}
                 className="hover:text-[#F5B400] text-[#F5B400] font-bold cursor-pointer transition"
               >
                 Telegram Support
